@@ -11,6 +11,7 @@ import Delivery from "@/pages/Delivery";
 import DeliveryRestaurant from "@/pages/DeliveryRestaurant";
 import DeliverySuccess from "@/pages/DeliverySuccess";
 import DeliveryTracking from "@/pages/DeliveryTracking";
+import DeliveryTrackerUpdate from "@/pages/DeliveryTrackerUpdate";
 import DeliveryAuth from "@/pages/DeliveryAuth";
 import DeliveryOrders from "@/pages/DeliveryOrders";
 import DeliveryProfile from "@/pages/DeliveryProfile";
@@ -66,6 +67,7 @@ const App = () => (
             <Route path="/delivery/:empresaId" element={<DeliveryRestaurant />} />
             <Route path="/delivery/success" element={<DeliverySuccess />} />
             <Route path="/delivery/tracking/:pedidoId" element={<DeliveryTracking />} />
+            <Route path="/delivery/tracker/:pedidoId" element={<DeliveryTrackerUpdate />} />
             <Route path="/admin" element={<AdminLayout />}>
               <Route index element={<Dashboard />} />
               <Route path="onboarding" element={<Onboarding />} />
